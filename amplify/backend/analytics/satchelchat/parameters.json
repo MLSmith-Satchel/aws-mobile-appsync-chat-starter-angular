@@ -1,0 +1,21 @@
+{
+    "appName": "satchelchat",
+    "roleName": "pinpointLambdaRoleffa35ee3",
+    "cloudformationPolicyName": "cloudformationPolicyffa35ee3",
+    "cloudWatchPolicyName": "cloudWatchPolicyffa35ee3",
+    "pinpointPolicyName": "pinpointPolicyffa35ee3",
+    "authPolicyName": "pinpoint_amplify_ffa35ee3",
+    "unauthPolicyName": "pinpoint_amplify_ffa35ee3",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
